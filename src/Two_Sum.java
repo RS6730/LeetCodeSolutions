@@ -1,0 +1,33 @@
+import java.util.Arrays;
+
+public class Two_Sum {
+
+    public int[] twoSum(int[] nums, int target) {
+
+        int[] result = new int[2];
+
+        for(int i = 0; i < nums.length; i++) {
+            for(int j = 1; j < nums.length; j++) {
+
+                if (nums[i] + nums[j] == target && j > i) {
+                    result[0] = i;
+                    result[1] = j;
+                    return result;
+                }
+            }
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        int[] result = new Two_Sum().twoSum(new int[]{3, 2, 4}, 6);
+        System.out.println(Arrays.toString(result));
+
+    }
+
+
+
+}
+

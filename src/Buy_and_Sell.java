@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 /**
  * Solution for LeetCode question 121. Best Time to Buy
@@ -9,7 +8,7 @@ import java.util.NoSuchElementException;
  * nested for loop and an ArrayList for array evaluation
  * (maximum value, appending elements to an array dynamically).
  */
-public class Solution1 {
+public class Buy_and_Sell {
 
     /**
      * Function for finding the optimal purchase and
@@ -58,7 +57,7 @@ public class Solution1 {
     }
 
     public static void main(String[] args) {
-        int sol = new Solution1().maxProfit(new int[]{7, 6, 5, 3, 1});
+        int sol = new Buy_and_Sell().maxProfit(new int[]{7, 6, 5, 3, 1});
         System.out.println(sol);
     }
 
